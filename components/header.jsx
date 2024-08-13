@@ -15,7 +15,9 @@ const navItems = [
 
 export function Header() {
     const [isOpen, setIsOpen] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
     const menuRef = useRef(null);
+    const prevScrollY = useRef(0);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -23,6 +25,18 @@ export function Header() {
 
     const closeMenu = () => {
         setIsOpen(false);
+    };
+
+    const handleScroll = () => {
+        const currentScrollY = window.scrollY;
+        if (currentScrollY > prevScrollY.current && currentScrollY > 50) {
+            // Scrolling down and past 50px, hide the header
+            setIsVisible(false);
+        } else if (currentScrollY < prevScrollY.current) {
+            // Scrolling up, show the header
+            setIsVisible(true);
+        }
+        prevScrollY.current = currentScrollY;
     };
 
     useEffect(() => {
@@ -34,13 +48,16 @@ export function Header() {
         };
 
         document.addEventListener('mousedown', handleClickOutside);
+        window.addEventListener('scroll', handleScroll);
+
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
+            window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
     return (
-        <nav className="bg-white shadow-lg fixed w-full z-50 top-0">
+        <nav className={`bg-white fixed w-full z-50 top-0 transition-transform duration-300 ease-in-out ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
             <div className="container mx-auto px-4 py-4 flex justify-between items-center">
                 {/* Logo */}
                 <Link href="/" className="flex items-center">
@@ -50,7 +67,7 @@ export function Header() {
 
                 {/* Hamburger Menu Icon for Mobile */}
                 <div className="md:hidden">
-                    <button onClick={toggleMenu} className="text-gray-700 focus:outline-none">
+                    <button onClick={toggleMenu} className="text-gray-700">
                         <svg
                             className="w-8 h-8"
                             fill="none"
@@ -71,7 +88,7 @@ export function Header() {
                 {/* Navigation Links */}
                 <div
                     ref={menuRef}
-                    className={`fixed top-0 right-0 w-64 bg-white shadow-lg transform ${
+                    className={`fixed top-0 right-0 w-64 bg-white transform ${
                         isOpen ? "translate-x-0" : "translate-x-full"
                     } transition-transform duration-300 ease-in-out md:static md:transform-none md:flex md:items-center md:w-auto md:space-x-6`}
                 >
