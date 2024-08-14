@@ -21,16 +21,10 @@ export default function WeddingDanceLessons() {
                 <div className="md:ml-10 w-full md:w-1/2">
                     <h1 className="text-4xl font-bold mb-4">Wedding Dance Lessons</h1>
                     <p className="text-lg mb-4">
-                        Your wedding day is one of the most memorable moments of your life, and the first dance is a
-                        cherished tradition that reflects your love story. Whether you&apos;re a complete beginner or
-                        looking to refine your dance skills, our wedding dance lessons are tailored to ensure that your
-                        first dance is as special as the rest of your day.
+                        Your wedding day is one of the most memorable moments of your life, and the first dance is a cherished tradition that reflects your love story. Whether you&apos;re a complete beginner or looking to refine your dance skills, our wedding dance lessons are tailored to ensure that your first dance is as special as the rest of your day.
                     </p>
                     <p className="text-lg mb-4">
-                        Learn to dance with confidence on your big day. Our wedding dance lessons are specifically
-                        designed to help you and your partner create a magical first dance that suits your style and
-                        personality. From choosing the right song to mastering the steps, we guide you through each
-                        stage of the process, ensuring that you feel comfortable and confident on the dance floor.
+                        Learn to dance with confidence on your big day. Our wedding dance lessons are specifically designed to help you and your partner create a magical first dance that suits your style and personality. From choosing the right song to mastering the steps, we guide you through each stage of the process, ensuring that you feel comfortable and confident on the dance floor.
                     </p>
                     <ul className="list-disc pl-6">
                         <li className="mb-2">Personalized Instruction</li>
@@ -41,7 +35,6 @@ export default function WeddingDanceLessons() {
                         <li>Memorable Experience</li>
                     </ul>
                 </div>
-
             </div>
 
             <h2 className="text-3xl font-bold mb-8">First Dance Packages</h2>
@@ -51,17 +44,13 @@ export default function WeddingDanceLessons() {
                 {/* Package 1 */}
                 <div className="p-6 border rounded-lg bg-white">
                     <h3 className="text-2xl font-bold mb-2">1 hour Wedding Dance Package - £80</h3>
-                    <p>This is usually for couples who are coming from abroad to the UK to get married and arrive just a
-                        week before their big day. Also, couples who have left it to the last minute to prepare, usually
-                        the week before.</p>
+                    <p>This is usually for couples who are coming from abroad to the UK to get married and arrive just a week before their big day. Also, couples who have left it to the last minute to prepare, usually the week before.</p>
                 </div>
 
                 {/* Package 2 */}
                 <div className="p-6 border rounded-lg bg-white">
                     <h3 className="text-2xl font-bold mb-2">2 hour Wedding Dance Package - £120</h3>
-                    <p>Our 2 x 1 hour Wedding Dance Package is for couples who want to learn a very basic first dance.
-                        This means holding each other properly, learning some basic footwork (perhaps the basic steps
-                        from a foxtrot or waltz).</p>
+                    <p>Our 2 x 1 hour Wedding Dance Package is for couples who want to learn a very basic first dance. This means holding each other properly, learning some basic footwork (perhaps the basic steps from a foxtrot or waltz).</p>
                 </div>
 
                 {/* Package 3 */}
@@ -101,7 +90,7 @@ export default function WeddingDanceLessons() {
                                 {faq.question}
                             </button>
                             {openFAQ === index && (
-                                <div className="px-6 pb-4 text-gray-700">
+                                <div className="px-6 py-4 text-gray-700">
                                     {faq.answer}
                                 </div>
                             )}
@@ -120,9 +109,14 @@ export default function WeddingDanceLessons() {
                         placeholder="Type your message here..."
                     ></textarea>
                 </div>
-                <div>
+                <div className="mb-4">
                     <a href="https://wa.me/07703483809" target="_blank" className="btn btn-success w-full">
                         Chat with us on WhatsApp
+                    </a>
+                </div>
+                <div>
+                    <a href="tel:07703483809" className="btn btn-primary w-full">
+                        Call Us: 077034 83809
                     </a>
                 </div>
             </div>
