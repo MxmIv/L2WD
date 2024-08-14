@@ -38,8 +38,19 @@ module.exports = {
                     background: '#2B1104',      // Background color for DaisyUI components
                     footer: '#313131',          // Footer background color
                     'footer-content': '#ffffff', // Text color on footer backgrounds
-                }
-            }
+                },
+                extend: {
+                        fontFamily: {
+                            sans: ['Roboto', ...defaultTheme.fontFamily.sans],
+                        },
+                        fontWeight: {
+                            light: 300,
+                            regular: 400,
+                            medium: 500,
+                            bold: 700,
+                        },
+                    },
+                },
         ]
     },
     plugins: [require('daisyui')]
