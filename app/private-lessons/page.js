@@ -1,4 +1,6 @@
 // app/private-lessons/page.js
+import ContactUs from '../../components/ContactUs'; // Import the ContactUs component
+
 export default function PrivateLessons() {
     return (
         <div className="container mx-auto px-4 py-10">
@@ -34,10 +36,8 @@ export default function PrivateLessons() {
                 />
             </div>
 
-            {/* Call to Action */}
-            <div className="text-center">
-                <button className="btn btn-primary">Book a Private Lesson</button>
-            </div>
+            {/* Contact Us Section */}
+            <ContactUs /> {/* Use the ContactUs component */}
         </div>
     );
 }

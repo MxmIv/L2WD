@@ -1,6 +1,7 @@
 "use client"; // Mark this component as a Client Component
 
 import { useState } from 'react';
+import ContactUs from '../../components/ContactUs'; // Import the ContactUs component
 
 export default function WeddingDanceLessons() {
     const [openFAQ, setOpenFAQ] = useState(null);
@@ -100,26 +101,7 @@ export default function WeddingDanceLessons() {
             </div>
 
             {/* Contact Us Section */}
-            <div className="p-6 bg-gray-100 rounded-lg mb-10">
-                <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
-                <div className="mb-4">
-                    <textarea
-                        className="w-full p-4 rounded-lg border"
-                        rows="5"
-                        placeholder="Type your message here..."
-                    ></textarea>
-                </div>
-                <div className="mb-4">
-                    <a href="https://wa.me/07703483809" target="_blank" className="btn btn-success w-full">
-                        Chat with us on WhatsApp
-                    </a>
-                </div>
-                <div>
-                    <a href="tel:07703483809" className="btn btn-primary w-full">
-                        Call Us: 077034 83809
-                    </a>
-                </div>
-            </div>
+            <ContactUs /> {/* Use the ContactUs component */}
         </div>
     );
 }
