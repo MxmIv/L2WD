@@ -8,7 +8,7 @@ export default function PrivateLessons() {
                 <div className="w-full md:w-1/2">
                     <h1 className="text-4xl font-bold mb-4">Private Lessons</h1> {/* Updated to font-bold */}
                     <p className="text-lg font-regular mb-4">
-                        Our private lessons are designed to meet your unique needs and skill level. Whether you're a beginner or an experienced dancer, enjoy personalized, one-on-one attention from our professional dance instructors.
+                        Whether you&apos;re a beginner or an experienced dancer, enjoy personalized, one-on-one attention from our professional dance instructors.
                     </p>
                     <p className="text-lg font-regular mb-6">
                         Private lessons offer the perfect opportunity to refine your technique, learn new steps, or explore a different dance style in a focused and supportive environment.
