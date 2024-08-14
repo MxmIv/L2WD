@@ -95,7 +95,7 @@ export function Header() {
                     <ul className="flex flex-col h-full p-6 space-y-4 md:flex-row md:space-y-0 md:space-x-6">
                         {navItems.map((item, index) => (
                             <li key={index} className="flex-grow">
-                                <Link href={item.href} onClick={closeMenu} className="block text-center text-gray-700 hover:text-primary no-underline py-2">
+                                <Link href={item.href} onClick={closeMenu} className="block text-center text-gray-700 hover:text-[#693D14] no-underline py-2">
                                     {item.linkText}
                                 </Link>
                             </li>
