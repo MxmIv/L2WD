@@ -21,13 +21,13 @@ export default function WeddingDanceLessons() {
                 />
                 <div className="md:ml-10 w-full md:w-1/2">
                     <h1 className="text-4xl font-bold mb-4">Wedding Dance Lessons</h1>
-                    <p className="text-lg mb-4">
+                    <p className="text-lg font-regular mb-4">
                         Your wedding day is one of the most memorable moments of your life, and the first dance is a cherished tradition that reflects your love story. Whether you&apos;re a complete beginner or looking to refine your dance skills, our wedding dance lessons are tailored to ensure that your first dance is as special as the rest of your day.
                     </p>
-                    <p className="text-lg mb-4">
+                    <p className="text-lg font-regular mb-4">
                         Learn to dance with confidence on your big day. Our wedding dance lessons are specifically designed to help you and your partner create a magical first dance that suits your style and personality. From choosing the right song to mastering the steps, we guide you through each stage of the process, ensuring that you feel comfortable and confident on the dance floor.
                     </p>
-                    <ul className="list-disc pl-6">
+                    <ul className="list-disc pl-6 text-lg font-regular">
                         <li className="mb-2">Personalized Instruction</li>
                         <li className="mb-2">Flexible Scheduling</li>
                         <li className="mb-2">Supportive Environment</li>
