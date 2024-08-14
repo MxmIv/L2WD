@@ -15,8 +15,19 @@ export default function HomePage() {
             <div className="container mx-auto px-4 py-10">
                 <h2 className="text-3xl font-bold mb-6">What we offer</h2>
                 <p className="text-lg mb-4">
-                    We offer a range of services to help you prepare for your special day. Whether you're looking for
-                    wedding dance lessons, private lessons, or fun hen parties, we have you covered.
+                    At Learn 2 Wedding Dance, we offer personalised one-to-one dance lessons and group sessions,
+                    specifically tailored for couples preparing for their First Wedding Dance. Our classes are held at
+                    the L2WD Studio in Edinburgh.
+                </p>
+                <p className="text-lg mb-4">
+                    Whether you’re seasoned dancers or complete beginners, seeking a fully choreographed routine or simply
+                    the confidence to navigate the dance floor without tripping over each other — we’ve got you covered.
+                </p>
+                <p className="text-lg mb-4">
+
+                    No matter your needs, we’ll guide you step by step, building your confidence so you look and
+                    feel fantastic on the dance floor. By the end of your lessons, you’ll be fully prepared for that
+                    unforgettable moment when you share your first dance as a married couple.
                 </p>
                 {/* Add more sections or components as needed */}
             </div>
