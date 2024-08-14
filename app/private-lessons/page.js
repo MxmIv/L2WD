@@ -1,9 +1,8 @@
-// app/private-lessons/page.js
 import ContactUs from '../../components/ContactUs'; // Import the ContactUs component
 
 export default function PrivateLessons() {
     return (
-        <div className="container mx-auto px-4 py-10">
+        <div className="container mx-auto px-4 py-20"> {/* Increased top padding to prevent header overlap */}
             {/* Header Section with Image and Text Divider */}
             <div className="flex flex-col md:flex-row items-center mb-10">
                 <div className="w-full md:w-1/2">
@@ -32,7 +31,7 @@ export default function PrivateLessons() {
                 <img
                     src="/images/private_lessons.jpg"
                     alt="Private Lessons"
-                    className="w-full md:w-1/2 rounded-lg mb-6 md:mb-0 shadow-lg md:ml-10"
+                    className="w-full md:w-auto rounded-lg mb-6 md:mb-0 shadow-lg md:ml-10 max-h-[600px] max-w-[400px] object-cover" // Adjusted for portrait orientation
                 />
             </div>
 
