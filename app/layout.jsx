@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
         <head>
-            <link rel="icon" href="/favicon.svg" sizes="any" />
+            <link rel="icon" href="/L2WD_logo.svg" sizes="any" />
         </head>
         <body className="antialiased text-gray-900 bg-white pt-20"> {/* Adjusted top padding */}
         <div className="flex flex-col min-h-screen">
