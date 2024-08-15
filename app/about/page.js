@@ -1,5 +1,3 @@
-// app/about/page.js
-
 export default function AboutUs() {
     return (
         <div className="container mx-auto px-4 py-20">
@@ -20,11 +18,11 @@ export default function AboutUs() {
                         Fellow of Freestyle Dance (FFD)
                     </p>
                 </div>
-                <div className="md:w-1/2 mt-6 md:mt-0 flex justify-center md:justify-end">
+                <div className="md:w-1/2 mt-6 md:mt-0 flex justify-center md:justify-center">
                     <img
-                        src="/images/Felicity.jpeg" // Replace with the correct image path
+                        src="/images/Felicity.jpeg"
                         alt="Felicity Drever"
-                        className="rounded-lg shadow-lg w-full max-w-[150px] md:max-w-[200px] lg:max-w-[250px]" // Smaller image size
+                        className="rounded-lg shadow-lg w-full max-w-[240px] md:max-w-[250px] lg:max-w-[300px]" // Optimized image size
                     />
                 </div>
             </div>
