@@ -12,7 +12,7 @@ module.exports = {
                 primary: '#2bdcd2',
             },
             fontFamily: {
-                sans: ['Inter', ...defaultTheme.fontFamily.sans],
+                sans: ['Roboto', ...defaultTheme.fontFamily.sans],
             },
         },
     },
