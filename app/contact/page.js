@@ -5,8 +5,6 @@ import ContactUs from '../../components/ContactUs'; // Import the ContactUs comp
 export default function ContactPage() {
     return (
         <div className="container mx-auto px-4 py-20">
-            <h1 className="text-4xl font-bold mb-8">Contact Us</h1>
-
             {/* Reusing the ContactUs component */}
             <ContactUs />
 
@@ -23,9 +21,7 @@ export default function ContactPage() {
 
                 <h2 className="text-3xl font-bold mb-4">Business Hours</h2>
                 <p className="text-lg">
-                    Monday - Friday: 10:00 AM - 8:00 PM<br />
-                    Saturday: 10:00 AM - 6:00 PM<br />
-                    Sunday: Closed
+                    We are open every day of the week. Just get in touch to arrange your lesson at a time that suits you.
                 </p>
             </div>
         </div>
