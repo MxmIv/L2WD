@@ -13,7 +13,7 @@ export default function ContactUs() {
                 <a href="tel:+447703483809" className="flex items-center justify-center bg-gray-700 text-white py-3 rounded-md hover:bg-gray-700 transition">
                     <FaPhoneAlt className="mr-2" /> Call Us
                 </a>
-                <a href="https://wa.me/447703483809" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center bg-[#25D366] text-white py-3 rounded-md hover:bg-opacity-90 transition">
+                <a href="https://wa.me/447703483809" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center bg-green-800 text-white py-3 rounded-md hover:bg-green-900 transition">
                     <FaWhatsapp className="mr-2" /> WhatsApp Us
                 </a>
             </div>
