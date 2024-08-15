@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import { Footer } from '../components/footer';
 import { Header } from '../components/header';
+import CookieBanner from '../components/CookieBanner';
 
 export const metadata = {
     title: {
@@ -23,7 +24,9 @@ export default function RootLayout({ children }) {
             <Header />
             <main className="flex-grow">{children}</main>
             <Footer />
+            <CookieBanner />
         </div>
+
         </body>
         </html>
     );
