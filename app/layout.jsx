@@ -47,7 +47,7 @@ export default function RootLayout({ children }) {
                 content="Personalized wedding dance lessons in Edinburgh. Learn from an award-winning choreographer to make your first dance unforgettable."
             />
             <meta property="og:image" content="/images/landing_page.jpg" /> {/* Update this with the correct path to your image */}
-            <meta property="og:url" content="https://www.learn2weddingdance.co.uk/" />
+            <meta property="og:url" content="https://cheery-unicorn-1781e4.netlify.app/" />
             <meta property="og:type" content="website" />
 
             {/* Twitter Card Tags */}
