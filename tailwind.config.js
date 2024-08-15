@@ -10,14 +10,7 @@ module.exports = {
             },
             colors: {
                 neutral: colors.neutral,
-                primary: '#693D14',          // Updated primary color to match your branding
-                'primary-content': '#171717', // Text color on primary backgrounds
-                secondary: '#016968',        // Secondary color for other UI elements
-                'secondary-content': '#ffffff', // Text color on secondary backgrounds
-                info: '#2bdcd2',             // Info color for highlights
-                'info-content': '#171717',   // Text color on info backgrounds
-                background: '#2B1104',       // Background color for your site
-                footer: '#313131',           // Footer background color
+                primary: '#2bdcd2',  // Updated primary color
             },
             fontFamily: {
                 sans: ['Inter', ...defaultTheme.fontFamily.sans]
@@ -29,28 +22,13 @@ module.exports = {
             {
                 lofi: {
                     ...require('daisyui/src/theming/themes')['lofi'],
-                    primary: '#693D14',         // Primary color for DaisyUI components
-                    'primary-content': '#171717', // Text color on primary backgrounds
-                    secondary: '#016968',       // Secondary color for DaisyUI components
-                    'secondary-content': '#ffffff', // Text color on secondary backgrounds
-                    info: '#2bdcd2',            // Info color for DaisyUI components
-                    'info-content': '#171717',  // Text color on info backgrounds
-                    background: '#2B1104',      // Background color for DaisyUI components
-                    footer: '#313131',          // Footer background color
-                    'footer-content': '#ffffff', // Text color on footer backgrounds
-                },
-                extend: {
-                        fontFamily: {
-                            sans: ['Roboto', ...defaultTheme.fontFamily.sans],
-                        },
-                        fontWeight: {
-                            light: 300,
-                            regular: 400,
-                            medium: 500,
-                            bold: 700,
-                        },
-                    },
-                },
+                    primary: '#2bdcd2', // Updated primary color
+                    'primary-content': '#171717',
+                    secondary: '#016968',
+                    info: '#2bdcd2',
+                    'info-content': '#171717',
+                }
+            }
         ]
     },
     plugins: [require('daisyui')]

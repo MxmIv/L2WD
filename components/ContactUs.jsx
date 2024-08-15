@@ -10,7 +10,7 @@ export default function ContactUs() {
                 Have any questions or want to book a session? Feel free to reach out to us!
             </p>
             <div className="flex flex-col space-y-4">
-                <a href="tel:+447703483809" className="flex items-center justify-center bg-[#693D14] text-white py-3 rounded-md hover:bg-opacity-90 transition">
+                <a href="tel:+447703483809" className="flex items-center justify-center bg-gray-700 text-white py-3 rounded-md hover:bg-gray-700 transition">
                     <FaPhoneAlt className="mr-2" /> Call Us
                 </a>
                 <a href="https://wa.me/447703483809" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center bg-[#25D366] text-white py-3 rounded-md hover:bg-opacity-90 transition">
