@@ -7,11 +7,11 @@ import { useState, useEffect, useRef } from 'react';
 const logo = '/L2WD_logo.svg'; // Correct path to the logo
 
 const navItems = [
-    { linkText: 'Home', href: '/' },
     { linkText: 'Wedding Dance Lessons', href: '/wedding-dance-lessons' },
     { linkText: 'Private Lessons', href: '/private-lessons' },
     { linkText: 'Hen Parties', href: '/hen-parties' },
-    { linkText: 'Contact', href: '/contact' } // Add a contact page if needed
+    { linkText: 'About Us', href: '/about' }, // Add About Us page link here
+    { linkText: 'Contact', href: '/contact' }
 ];
 
 export function Header() {
@@ -31,17 +31,14 @@ export function Header() {
     const handleScroll = () => {
         const currentScrollY = window.scrollY;
         if (currentScrollY > prevScrollY.current && currentScrollY > 50) {
-            // Scrolling down and past 50px, hide the header
             setIsVisible(false);
         } else if (currentScrollY < prevScrollY.current) {
-            // Scrolling up, show the header
             setIsVisible(true);
         }
         prevScrollY.current = currentScrollY;
     };
 
     useEffect(() => {
-        // Close the menu if clicked outside of it or if the button is clicked again
         const handleClickOutside = (event) => {
             if (menuRef.current && !menuRef.current.contains(event.target)) {
                 closeMenu();
@@ -60,12 +57,10 @@ export function Header() {
     return (
         <nav className={`bg-white fixed w-full z-50 top-0 transition-transform duration-300 ease-in-out ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
             <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-                {/* Logo */}
                 <Link href="/" className="flex items-center">
                     <Image src={logo} alt="L2WD logo" width={100} height={100} /> {/* Updated size */}
                 </Link>
 
-                {/* Hamburger Menu Icon for Mobile */}
                 <div className="md:hidden">
                     <button onClick={toggleMenu} className="text-gray-700">
                         <svg
@@ -85,7 +80,6 @@ export function Header() {
                     </button>
                 </div>
 
-                {/* Navigation Links */}
                 <div
                     ref={menuRef}
                     className={`fixed top-0 right-0 w-64 bg-white transform ${
@@ -95,7 +89,7 @@ export function Header() {
                     <ul className="flex flex-col h-full p-6 space-y-4 md:flex-row md:space-y-0 md:space-x-6">
                         {navItems.map((item, index) => (
                             <li key={index} className="flex-grow">
-                                <Link href={item.href} onClick={closeMenu} className="block text-center text-gray-700 hover:text-[#693D14] no-underline py-2">
+                                <Link href={item.href} onClick={closeMenu} className="block text-center text-gray-700 hover:text-primary no-underline py-2">
                                     {item.linkText}
                                 </Link>
                             </li>
