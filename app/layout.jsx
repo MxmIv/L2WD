@@ -46,15 +46,15 @@ export default function RootLayout({ children }) {
                 property="og:description"
                 content="Personalized wedding dance lessons in Edinburgh. Learn from an award-winning choreographer to make your first dance unforgettable."
             />
-            <meta property="og:image" content="images/og-image.jpg" /> {/* Update this with the correct path to your image */}
+            <meta property="og:image" content="https://cheery-unicorn-1781e4.netlify.app/images/og-image.jpg" /> {/* Update this with the correct path to your image */}
             <meta property="og:url" content="https://cheery-unicorn-1781e4.netlify.app/" />
-            <meta property="og:type" content="website" />
+            <meta property="og:type" content="Learn 2 Wedding Dance" />
 
             {/* Twitter Card Tags */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content="Learn to Wedding Dance | Professional Wedding Dance Lessons" />
             <meta name="twitter:description" content="Personalized wedding dance lessons in Edinburgh. Learn from an award-winning choreographer to make your first dance unforgettable." />
-            <meta name="twitter:image" content="images/og-image.jpg" /> {/* Update this with the correct path to your image */}
+            <meta name="twitter:image" content="https://cheery-unicorn-1781e4.netlify.app/images/og-image.jpg" /> {/* Update this with the correct path to your image */}
 
             <title>Learn to Wedding Dance | Professional Wedding Dance Lessons</title>
         </Head>
