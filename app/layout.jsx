@@ -2,19 +2,43 @@ import '../styles/globals.css';
 import { Footer } from '../components/footer';
 import { Header } from '../components/header';
 import CookieBanner from '../components/CookieBanner';
-import Head from 'next/head';
 
 export const metadata = {
     title: {
         template: 'Learn 2 Wedding Dance',
         default: 'Learn 2 Wedding Dance | Hen Parties',
     },
+    description: 'Personalized wedding dance lessons in Edinburgh. Learn from an award-winning choreographer to make your first dance unforgettable.',
+    keywords: 'Wedding dance lessons, Edinburgh, First dance, Choreographer, Dance studio',
+    author: 'Learn 2 Wedding Dance',
+    viewport: 'width=device-width, initial-scale=1',
+    robots: 'index, follow',
+    openGraph: {
+        type: 'website',
+        url: 'https://cheery-unicorn-1781e4.netlify.app/',
+        title: 'Learn to Wedding Dance | Professional Wedding Dance Lessons',
+        description: 'Personalized wedding dance lessons in Edinburgh. Learn from an award-winning choreographer to make your first dance unforgettable.',
+        images: [
+            {
+                url: 'https://cheery-unicorn-1781e4.netlify.app/images/og-image.jpg',
+                width: 1200,
+                height: 630,
+                alt: 'Wedding Dance Lessons',
+            },
+        ],
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Learn to Wedding Dance | Professional Wedding Dance Lessons',
+        description: 'Personalized wedding dance lessons in Edinburgh. Learn from an award-winning choreographer to make your first dance unforgettable.',
+        image: 'https://cheery-unicorn-1781e4.netlify.app/images/og-image.jpg',
+    },
 };
 
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-        <Head>
+        <head>
             {/* Favicon */}
             <link rel="icon" href="/L2WD_logo.svg" sizes="any" />
 
@@ -48,7 +72,7 @@ export default function RootLayout({ children }) {
             />
             <meta property="og:image" content="https://cheery-unicorn-1781e4.netlify.app/images/og-image.jpg" /> {/* Update this with the correct path to your image */}
             <meta property="og:url" content="https://cheery-unicorn-1781e4.netlify.app/" />
-            <meta property="og:type" content="Learn 2 Wedding Dance" />
+            <meta property="og:type" content="website" />
 
             {/* Twitter Card Tags */}
             <meta name="twitter:card" content="summary_large_image" />
@@ -57,7 +81,7 @@ export default function RootLayout({ children }) {
             <meta name="twitter:image" content="https://cheery-unicorn-1781e4.netlify.app/images/og-image.jpg" /> {/* Update this with the correct path to your image */}
 
             <title>Learn to Wedding Dance | Professional Wedding Dance Lessons</title>
-        </Head>
+        </head>
         <body className="antialiased text-gray-900 bg-white pt-20"> {/* Adjusted top padding */}
         <div className="flex flex-col min-h-screen">
             <Header />
