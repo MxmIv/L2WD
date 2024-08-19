@@ -51,10 +51,10 @@ export default function AboutUs() {
                     Located in the south of Edinburgh, our studio is just a 20-minute bus ride from the city centre and offers plenty of on-street parking for those arriving by car.
                 </p>
                 <p className="text-lg mb-4">
-                    Learn 2 Wedding Dance Studio is Scotland's only dance studio dedicated exclusively to First Wedding Dance couples.
+                    Learn 2 Wedding Dance Studio is Scotland&apos;s only dance studio dedicated exclusively to First Wedding Dance couples.
                 </p>
                 <p className="text-lg mb-4">
-                    Our studio features a sprung dance floor, a state-of-the-art sound system, and a relaxed, private atmosphere where couples can enjoy their lessons. With the best First Wedding Dance instructors in the business, you'll be in excellent hands.
+                    Our studio features a sprung dance floor, a state-of-the-art sound system, and a relaxed, private atmosphere where couples can enjoy their lessons. With the best First Wedding Dance instructors in the business, you&apos;ll be in excellent hands.
                 </p>
             </div>
         </div>
