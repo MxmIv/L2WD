@@ -12,11 +12,11 @@ export function Footer() {
                             <Link href="/wedding-dance-lessons" className="hover:text-white">
                                 Wedding Dance Lessons
                             </Link>
-                            <Link href="/private-lessons" className="hover:text-white">
-                                Private Lessons
-                            </Link>
-                            <Link href="/other-lessons" className="hover:text-white"> {/* Changed from Hen Parties to Other Lessons */}
+                            <Link href="/other-lessons" className="hover:text-white">
                                 Other Lessons
+                            </Link>
+                            <Link href="/hen-parties" className="hover:text-white">
+                                Hen Parties
                             </Link>
                             <Link href="/about" className="hover:text-white">
                                 About Us
