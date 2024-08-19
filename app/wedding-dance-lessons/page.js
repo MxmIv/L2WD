@@ -75,24 +75,40 @@ export default function WeddingDanceLessons() {
 
             {/* FAQ Section */}
             <div className="mb-10">
-                <h2 className="text-3xl font-bold mb-6">FAQs</h2>
+                <h2 className="text-3xl font-bold mb-6">FAQs</h2> {/* Updated with the correct FAQ section */}
                 <div className="space-y-4">
                     {[
                         {
+                            question: "What Should I Bring to My Lesson?",
+                            answer: "Please wear something that allows you to move freely and bring comfortable shoes. If you don't mind wearing your wedding shoes during lessons, this is a great opportunity to break them in and get comfortable dancing in them before your big day. We also recommend bringing a bottle of water."
+                        },
+                        {
+                            question: "How to choose a song?",
+                            answer: "Choose a song that resonates with the both of you. It could be a song with a special meaning or one that you both love. Our choreographers can work with almost any song you choose and make it uniquely yours, so don’t be afraid to go for something different."
+                        },
+                        {
                             question: "What Will Our First Dance Look Like?",
                             answer: (
-                                <div>
-                                    <p className="font-bold">Tailored to You</p>
+                                <>
+                                    <strong>Tailored to You</strong>
                                     <p>Your first dance will be tailored to match your style, song choice, and comfort level. Whether you dream of recreating the iconic Dirty Dancing scene or want to impress your guests with a graceful waltz, we’ll make sure it reflects your unique personalities.</p>
-                                    <br />
-                                    <p className="font-bold">Custom Choreography</p>
+                                    <strong>Custom Choreography</strong>
                                     <p>We can choreograph a dance specifically for you and your chosen song, making the learning process more enjoyable. Instead of memorising complex steps, you’ll dance just as you envisioned. We’ll discuss your ideas and vision, then create a routine together in a fun and relaxed environment.</p>
-                                </div>
+                                </>
                             )
                         },
-                        { question: "What Should I Bring to My Lesson?", answer: "Please bring comfortable shoes and wear something you can move freely in. A bottle of water is also recommended." },
-                        { question: "How to choose a song?", answer: "Choose a song that resonates with both of you. It could be a song with a special meaning or one that you both love." },
-                        { question: "How Can I Pay for Lessons?", answer: "Payments can be made via bank transfer or in cash before the lesson begins." },
+                        {
+                            question: "How Can I Pay for Lessons?",
+                            answer: "Payments can be made via bank transfer or in cash before the lesson."
+                        },
+                        {
+                            question: "Rescheduling a Lesson",
+                            answer: "When you book your lessons, you'll receive confirmation of all the times and dates you have chosen for your lessons. If you can’t attend any of your scheduled lessons, you can easily reschedule them to a more suitable day. Please notify us as soon as possible if you need to reschedule. We kindly ask for a minimum of 4 hours' notice to allow us time to adjust the choreographer’s schedule. Rescheduling is free of charge as long as you provide at least 4 hours' notice."
+                        },
+                        {
+                            question: "Cancellation Policy",
+                            answer: "If you decide to cancel after starting your lessons, a £10 charge will apply for each remaining hour before a refund is issued. The final refund amount will be calculated based on the number of lessons taken, not the discounted rate for the originally booked package."
+                        }
                     ].map((faq, index) => (
                         <div key={index} className="border rounded-lg">
                             <button
