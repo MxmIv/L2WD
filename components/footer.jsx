@@ -15,8 +15,8 @@ export function Footer() {
                             <Link href="/private-lessons" className="hover:text-white">
                                 Private Lessons
                             </Link>
-                            <Link href="/hen-parties" className="hover:text-white">
-                                Hen Parties
+                            <Link href="/other-lessons" className="hover:text-white"> {/* Changed from Hen Parties to Other Lessons */}
+                                Other Lessons
                             </Link>
                             <Link href="/about" className="hover:text-white">
                                 About Us
@@ -45,7 +45,7 @@ export function Footer() {
                     {/* Right Side: Studio Address and Contact Details */}
                     <div className="order-3 sm:w-1/2 text-center sm:text-right">
                         {/* Studio Address */}
-                        <p className="text-lg font-semibold mb-4 italic">
+                        <p className="text-lg font-semibold mb-4">
                             Learn 2 Wedding Dance Studio<br />
                             132 Captains Road, Edinburgh EH17 8DU
                         </p>
