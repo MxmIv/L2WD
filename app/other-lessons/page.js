@@ -29,7 +29,7 @@ export default function OtherLessons() {
                     </p>
                 </div>
                 <img
-                    src="/images/private_lessons_unused.jpg"
+                    src="/images/private_lessons.jpg"
                     alt="Private Lessons"
                     className="w-full md:w-auto rounded-lg mb-6 md:mb-0 shadow-lg md:ml-10 max-h-[600px] max-w-[400px] object-cover" // Adjusted for portrait orientation
                 />
