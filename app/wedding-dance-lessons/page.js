@@ -17,23 +17,23 @@ export default function WeddingDanceLessons() {
                 <img
                     src="/images/Wedding-classes-compressed.jpg"
                     alt="Wedding Dance"
-                    className="w-full md:w-1/2 rounded-lg mb-6 md:mb-0"
+                    className="w-full md:w-auto rounded-lg mb-6 md:mb-0 shadow-lg md:ml-10 max-h-[600px] max-w-[400px] object-cover" // Adjusted image size
                 />
                 <div className="md:ml-10 w-full md:w-1/2">
                     <h1 className="text-4xl font-bold mb-4">Wedding Dance Lessons</h1>
                     <p className="text-lg font-regular mb-4">
-                        Your wedding day is one of the most memorable moments of your life, and the first dance is a cherished tradition that reflects your love story. Whether you&apos;re a complete beginner or looking to refine your dance skills, our wedding dance lessons are tailored to ensure that your first dance is as special as the rest of your day.
+                        Your wedding day is one of the most memorable moments of your life, and the first dance is a cherished tradition that reflects your unique love story. Whether you’re a complete beginner or looking to refine your dance skills, our wedding dance lessons are designed to ensure that your first dance is as special as the rest of your day.
                     </p>
                     <p className="text-lg font-regular mb-4">
-                        Learn to dance with confidence on your big day. Our wedding dance lessons are specifically designed to help you and your partner create a magical first dance that suits your style and personality. From choosing the right song to mastering the steps, we guide you through each stage of the process, ensuring that you feel comfortable and confident on the dance floor.
+                        Dance with confidence on your big day. Our wedding dance lessons are tailored to help you and your partner create a magical first dance that suits your style and personality. From selecting the perfect song to mastering the steps, we guide you through every stage of the process, making sure you feel comfortable and confident on the dance floor.
                     </p>
                     <ul className="list-disc pl-6 text-lg font-regular">
-                        <li className="mb-2">Personalized Instruction</li>
+                        <li className="mb-2">Personalised Instruction</li>
                         <li className="mb-2">Flexible Scheduling</li>
                         <li className="mb-2">Supportive Environment</li>
                         <li className="mb-2">Choreography to Suit You</li>
                         <li className="mb-2">Practice Makes Perfect</li>
-                        <li>Memorable Experience</li>
+                        <li>A Memorable Experience</li>
                     </ul>
                 </div>
             </div>
@@ -78,10 +78,12 @@ export default function WeddingDanceLessons() {
                 <h2 className="text-3xl font-bold mb-6">FAQs</h2>
                 <div className="space-y-4">
                     {[
-                        { question: "What do I bring on my lesson?", answer: "Please bring comfortable shoes and wear something you can move freely in. A bottle of water is also recommended." },
-                        { question: "How to choose a song?", answer: "Choose a song that resonates with both of you. It could be a song with a special meaning or one that you both love." },
-                        { question: "What will the first dance look like?", answer: "Your first dance will be tailored to your style, song choice, and comfort level. We'll ensure it reflects your unique personalities." },
-                        { question: "How do I pay for lessons?", answer: "Payments can be made via bank transfer or in cash before the lesson begins." }
+                        { question: "What Should I Bring to My Lesson?", answer: "Please wear something that allows you to move freely and bring comfortable shoes. If you don't mind wearing your wedding shoes during lessons, this is a great opportunity to break them in and get comfortable dancing in them before your big day. We also recommend bringing a bottle of water." },
+                        { question: "How to choose a song?", answer: "Choose a song that resonates with both of you. It could be a song with a special meaning or one that you both love. Our choreographers can work with almost any song you choose and make it uniquely yours, so don’t be afraid to go for something different." },
+                        { question: "What Will Our First Dance Look Like?", answer: "Your first dance will be tailored to match your style, song choice, and comfort level. Whether you dream of recreating the iconic Dirty Dancing scene or want to impress your guests with a graceful waltz, we’ll make sure it reflects your unique personalities." },
+                        { question: "How Can I Pay for Lessons?", answer: "Payments can be made via bank transfer or in cash before the lesson." },
+                        { question: "Rescheduling a Lesson", answer: "When you book your lessons, you'll receive confirmation of all the times and dates you have chosen for your lessons. If you can’t attend any of your scheduled lessons, you can easily reschedule them to a more suitable day. Please notify us as soon as possible if you need to reschedule. We kindly ask for a minimum of 4 hours' notice to allow us time to adjust the choreographer’s schedule. Rescheduling is free of charge as long as you provide at least 4 hours' notice." },
+                        { question: "Cancellation Policy", answer: "If you decide to cancel after starting your lessons, a £10 charge will apply for each remaining hour before a refund is issued. The final refund amount will be calculated based on the number of lessons taken, not the discounted rate for the originally booked package." },
                     ].map((faq, index) => (
                         <div key={index} className="border rounded-lg">
                             <button
