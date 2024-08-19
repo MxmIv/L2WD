@@ -39,11 +39,22 @@ export default function AboutUs() {
                 <p className="text-lg mb-4">
                     Affordable prices, fun tuition, and a dedicated wedding dance studio in Edinburgh have kept Felicity busy, so far teaching over 5,000 couples their unique choreographed First Dance.
                 </p>
-                <p className="text-lg mb-4">
-                    Easy phone booking, free rescheduling in advance of any lessons you can&apos;t make, and a real giggle with Felicity during lessons ensures couples get the very best service and enjoyment whilst learning.
-                </p>
                 <p className="text-lg">
                     Felicity works very hard to ensure your first ever dance together as a married couple is one you will both remember forever, for all the right reasons!
+                </p>
+            </div>
+
+            {/* Our Studio Information */}
+            <div className="mb-10">
+                <h2 className="text-3xl font-bold mb-6">Our Studio</h2>
+                <p className="text-lg mb-4">
+                    Located in the south of Edinburgh, our studio is just a 20-minute bus ride from the city centre and offers plenty of on-street parking for those arriving by car.
+                </p>
+                <p className="text-lg mb-4">
+                    Learn 2 Wedding Dance Studio is Scotland's only dance studio dedicated exclusively to First Wedding Dance couples.
+                </p>
+                <p className="text-lg mb-4">
+                    Our studio features a sprung dance floor, a state-of-the-art sound system, and a relaxed, private atmosphere where couples can enjoy their lessons. With the best First Wedding Dance instructors in the business, you'll be in excellent hands.
                 </p>
             </div>
         </div>
