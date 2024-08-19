@@ -12,16 +12,10 @@ export default function HenParties() {
 
     return (
         <div className="container mx-auto px-4 py-20"> {/* Adjusted padding to prevent hiding behind header */}
-            <h1 className="text-4xl font-bold mb-6">Hen Parties</h1> {/* Updated to use Tailwind's font-bold */}
-
             {/* Image and Intro Section */}
             <div className="flex flex-col md:flex-row items-center mb-10">
-                <img
-                    src="/images/hen_parties.jpg"
-                    alt="Hen Party Dance"
-                    className="w-full md:w-1/2 rounded-lg shadow-lg mb-6 md:mb-0"
-                />
-                <div className="md:ml-10 w-full md:w-1/2">
+                <div className="w-full md:w-1/2">
+                    <h1 className="text-4xl font-bold mb-4">Hen Parties</h1> {/* Updated to use Tailwind's font-bold */}
                     <p className="text-lg font-regular mb-4">
                         Make your hen party unforgettable with our fun and lively dance sessions. Choose from a variety of dance styles and get ready to have a blast!
                     </p>
@@ -36,6 +30,11 @@ export default function HenParties() {
                         From the music to the dance moves, we’ll work with you to create the perfect hen party that reflects the bride’s personality and style. Just let us know your ideas, and we’ll bring them to life!
                     </p>
                 </div>
+                <img
+                    src="/images/hen_parties.jpg"
+                    alt="Hen Party Dance"
+                    className="w-full md:w-auto rounded-lg mb-6 md:mb-0 shadow-lg md:ml-10 max-h-[600px] max-w-[400px] object-cover" // Adjusted for portrait orientation
+                />
             </div>
 
             {/* FAQ Section */}
