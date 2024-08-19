@@ -11,10 +11,6 @@ export const metadata = {
     description: 'Personalized wedding dance lessons in Edinburgh. Learn from an award-winning choreographer to make your first dance unforgettable.',
     keywords: 'Wedding dance lessons, Edinburgh, First dance, Choreographer, Dance studio',
     author: 'Learn 2 Wedding Dance',
-    viewport: {
-        width: 'device-width',
-        initialScale: 1,
-    },
     robots: 'index, follow',
     openGraph: {
         type: 'website',
