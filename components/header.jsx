@@ -8,7 +8,7 @@ const logo = '/L2WD_logo.svg'; // Correct path to the logo
 
 const navItems = [
     { linkText: 'Wedding Dance Lessons', href: '/wedding-dance-lessons' },
-    { linkText: 'Private Lessons', href: '/private-lessons' },
+    { linkText: 'Other Lessons', href: '/other-lessons' },
     { linkText: 'Hen Parties', href: '/hen-parties' },
     { linkText: 'About Us', href: '/about' }, // Add About Us page link here
     { linkText: 'Contact', href: '/contact' }

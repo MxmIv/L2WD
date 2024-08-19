@@ -1,17 +1,17 @@
 import ContactUs from '../../components/ContactUs'; // Import the ContactUs component
 
-export default function PrivateLessons() {
+export default function OtherLessons() {
     return (
         <div className="container mx-auto px-4 py-20"> {/* Increased top padding to prevent header overlap */}
             {/* Header Section with Image and Text Divider */}
             <div className="flex flex-col md:flex-row items-center mb-10">
                 <div className="w-full md:w-1/2">
-                    <h1 className="text-4xl font-bold mb-4">Private Lessons</h1> {/* Updated to font-bold */}
+                    <h1 className="text-4xl font-bold mb-4">Other Lessons</h1> {/* Updated to "Other Lessons" */}
                     <p className="text-lg font-regular mb-4">
-                        Whether you&apos;re a beginner or an experienced dancer, enjoy personalized, one-on-one attention from our professional dance instructors.
+                        Whether you&apos;re a beginner or an experienced dancer, our private lessons provide personalised, one-on-one attention from professional dance instructors.
                     </p>
                     <p className="text-lg font-regular mb-6">
-                        Private lessons offer the perfect opportunity to refine your technique, learn new steps, or explore a different dance style in a focused and supportive environment.
+                        Private dance lessons offer the ideal opportunity to refine your technique, learn new steps, or explore different dance styles in a focused and supportive environment.
                     </p>
                     <h2 className="text-3xl font-bold mb-6">Explore Different Dance Styles</h2> {/* Updated to font-bold */}
                     <p className="text-lg font-regular mb-4">
@@ -25,11 +25,11 @@ export default function PrivateLessons() {
                         </li>
                     </ul>
                     <p className="text-lg font-regular">
-                        Whether you want to master a particular style or explore a variety of dances, our instructors will guide you every step of the way.
+                        Whether you want to master a specific style or explore a variety of dances, our instructors will guide you every step of the way.
                     </p>
                 </div>
                 <img
-                    src="/images/private_lessons.jpg"
+                    src="/images/private_lessons_unused.jpg"
                     alt="Private Lessons"
                     className="w-full md:w-auto rounded-lg mb-6 md:mb-0 shadow-lg md:ml-10 max-h-[600px] max-w-[400px] object-cover" // Adjusted for portrait orientation
                 />
