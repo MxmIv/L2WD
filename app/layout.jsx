@@ -19,7 +19,7 @@ export const metadata = {
         description: 'Personalized wedding dance lessons in Edinburgh. Learn from an award-winning choreographer to make your first dance unforgettable.',
         images: [
             {
-                url: 'https://cheery-unicorn-1781e4.netlify.app/images/og-image.jpg',
+                url: 'https://cheery-unicorn-1781e4.netlify.app/images/og-image.png',
                 width: 1200,
                 height: 630,
                 alt: 'Wedding Dance Lessons',
@@ -30,7 +30,7 @@ export const metadata = {
         card: 'summary_large_image',
         title: 'Learn to Wedding Dance | Professional Wedding Dance Lessons',
         description: 'Personalized wedding dance lessons in Edinburgh. Learn from an award-winning choreographer to make your first dance unforgettable.',
-        image: 'https://cheery-unicorn-1781e4.netlify.app/images/og-image.jpg',
+        image: 'https://cheery-unicorn-1781e4.netlify.app/images/og-image.png',
     },
 };
 
