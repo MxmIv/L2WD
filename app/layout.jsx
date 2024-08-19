@@ -4,10 +4,6 @@ import { Header } from '../components/header';
 import CookieBanner from '../components/CookieBanner';
 
 export const metadata = {
-    title: {
-        template: 'Learn 2 Wedding Dance',
-        default: 'Learn 2 Wedding Dance | Hen Parties',
-    },
     description: 'Personalized wedding dance lessons in Edinburgh. Learn from an award-winning choreographer to make your first dance unforgettable.',
     keywords: 'Wedding dance lessons, Edinburgh, First dance, Choreographer, Dance studio',
     author: 'Learn 2 Wedding Dance',
