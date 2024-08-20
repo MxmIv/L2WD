@@ -44,18 +44,27 @@ export default function AboutUs() {
                 </p>
             </div>
 
-            {/* Our Studio Information */}
-            <div className="mb-10">
-                <h2 className="text-3xl font-bold mb-6">Our Studio</h2>
-                <p className="text-lg mb-4">
-                    Located in the south of Edinburgh, our studio is just a 20-minute bus ride from the city center and offers plenty of on-street parking for those arriving by car.
-                </p>
-                <p className="text-lg mb-4">
-                    Learn 2 Wedding Dance Studio is Scotland&apos;s only dance studio dedicated exclusively to First Wedding Dance couples.
-                </p>
-                <p className="text-lg mb-4">
-                    Our studio features a sprung dance floor, a state-of-the-art sound system, and a relaxed, private atmosphere where couples can enjoy their lessons. With the best First Wedding Dance instructors in the business, you&apos;ll be in excellent hands.
-                </p>
+            {/* Our Studio Information with Image */}
+            <div className="flex flex-col md:flex-row items-center mb-10">
+                <div className="md:w-1/2">
+                    <h2 className="text-3xl font-bold mb-6">Our Studio</h2>
+                    <p className="text-lg mb-4">
+                        Located in the south of Edinburgh, our studio is just a 20-minute bus ride from the city center and offers plenty of on-street parking for those arriving by car.
+                    </p>
+                    <p className="text-lg mb-4">
+                        Learn 2 Wedding Dance Studio is Scotland&apos;s only dance studio dedicated exclusively to First Wedding Dance couples.
+                    </p>
+                    <p className="text-lg mb-4">
+                        Our studio features a sprung dance floor, a state-of-the-art sound system, and a relaxed, private atmosphere where couples can enjoy their lessons. With the best First Wedding Dance instructors in the business, you&apos;ll be in excellent hands.
+                    </p>
+                </div>
+                <div className="md:w-1/2 mt-6 md:mt-0 flex justify-center">
+                    <img
+                        src="/images/L2WDPhoto.jpg"
+                        alt="Learn 2 Wedding Dance Studio"
+                        className="rounded-lg shadow-lg w-full max-w-[500px] md:max-w-[550px] lg:max-w-[600px]" // Optimized image size
+                    />
+                </div>
             </div>
         </div>
     );
