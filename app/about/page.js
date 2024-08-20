@@ -30,7 +30,7 @@ export default function AboutUs() {
             {/* Learn 2 Wedding Dance Information */}
             <div className="mb-10">
                 <p className="text-lg mb-4">
-                    Learn 2 Wedding Dance (L2WD) was founded in 2003 by Felicity Drever. Felicity trained as a
+                    Learn to Wedding Dance (L2WD) was founded in 2003 by Felicity Drever. Felicity trained as a
                     professional dancer, teacher, and choreographer at Edinburgh&apos;s top theatre school. Her extensive background in Ballroom &amp; Latin dance competitions and teaching, along with years of hard study, saw her awarded a Fellowship in both Latin &amp; Ballroom dance styles.
                 </p>
                 <p className="text-lg mb-4">
@@ -48,7 +48,7 @@ export default function AboutUs() {
             <div className="mb-10">
                 <h2 className="text-3xl font-bold mb-6">Our Studio</h2>
                 <p className="text-lg mb-4">
-                    Located in the south of Edinburgh, our studio is just a 20-minute bus ride from the city centre and offers plenty of on-street parking for those arriving by car.
+                    Located in the south of Edinburgh, our studio is just a 20-minute bus ride from the city center and offers plenty of on-street parking for those arriving by car.
                 </p>
                 <p className="text-lg mb-4">
                     Learn 2 Wedding Dance Studio is Scotland&apos;s only dance studio dedicated exclusively to First Wedding Dance couples.
