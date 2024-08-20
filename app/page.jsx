@@ -15,7 +15,7 @@ export default function HomePage() {
             <div className="container mx-auto px-4 py-10">
                 <h2 className="text-3xl font-bold mb-6">What we offer</h2>
                 <p className="text-lg font-regular mb-4">
-                    At Learn 2 Wedding Dance, we offer personalised one-to-one dance lessons and group sessions,
+                    At Learn to Wedding Dance, we offer personalised one-to-one dance lessons and group sessions,
                     specifically tailored for couples preparing for their First Wedding Dance. Our classes are held at
                     the L2WD Studio in Edinburgh.
                 </p>

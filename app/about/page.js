@@ -30,7 +30,7 @@ export default function AboutUs() {
             {/* Learn 2 Wedding Dance Information */}
             <div className="mb-10">
                 <p className="text-lg mb-4">
-                    Learn 2 Wedding Dance (L2WD) was founded in 2003 by Felicity Mclean. Felicity trained as a
+                    Learn 2 Wedding Dance (L2WD) was founded in 2003 by Felicity Drever. Felicity trained as a
                     professional dancer, teacher, and choreographer at Edinburgh&apos;s top theatre school. Her extensive background in Ballroom &amp; Latin dance competitions and teaching, along with years of hard study, saw her awarded a Fellowship in both Latin &amp; Ballroom dance styles.
                 </p>
                 <p className="text-lg mb-4">
