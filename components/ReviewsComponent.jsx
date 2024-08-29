@@ -19,7 +19,14 @@ export default function ReviewsComponent() {
             name: "Sam A",
             rating: 5,
             text: "We can’t recommend Felicity enough. We have a wedding coming up very soon, and Felicity guided us through our first dance every step of the way, with skill, warmth, and humor. If you need help with your wedding dance, you won’t find better!"
-        }
+        },
+        {
+            name: "Dara Ann Kinloch",
+            rating: 5,
+            text: "Felicity is a brilliant teacher and we had a great time from start to finish, choosing our first dance, learning the moves and picking up lots of tips on the way! We had three classes and it made such a difference as we had never danced together before. We received loads of compliments and would highly recommend Felicity!"
+        },
+
+
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
