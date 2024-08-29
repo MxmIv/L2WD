@@ -1,3 +1,5 @@
+import ReviewsComponent from '../components/ReviewsComponent';
+
 export default function HomePage() {
     return (
         <div>
@@ -11,7 +13,7 @@ export default function HomePage() {
                 </div>
             </section>
 
-            {/* Rest of your landing page content goes here */}
+            {/* Main content */}
             <div className="container mx-auto px-4 py-10">
                 <h2 className="text-3xl font-bold mb-6">What we offer</h2>
                 <p className="text-lg font-regular mb-4">
@@ -28,6 +30,10 @@ export default function HomePage() {
                     feel fantastic on the dance floor. By the end of your lessons, you’ll be fully prepared for that
                     unforgettable moment when you share your first dance as a married couple.
                 </p>
+
+                {/* Reviews Section */}
+                <ReviewsComponent />
+
                 {/* Add more sections or components as needed */}
             </div>
         </div>
