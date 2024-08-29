@@ -11,19 +11,9 @@ export default function ReviewsComponent() {
             text: "Felicity was amazing and made our dream come true for our wedding day! We had 5 lessons and we loved how Felicity taught us and had so much fun with it as well. We were complete newbies but were doing lifts and death drops by the end of our sessions! I would definitely recommend Felicity if you want something special for your wedding day!"
         },
         {
-            name: "Bradley John",
-            rating: 5,
-            text: "My wife Alex and I were so lucky to find Felicity as she put together our wedding dance routine which was fantastic! She was an excellent teacher especially as I have 2 left feet! We enjoyed our classes so much and couldn't have been happier. The dance on the wedding day was exactly how we imagined it would be so thank you so much! We couldn't recommend more to anyone thinking about a wedding dance, to get in touch with Felicity!"
-        },
-        {
             name: "John Casey",
             rating: 5,
             text: "Felicity was superb! We had 2 lessons before our wedding and have gone from totally unprepared to feeling super confident and very prepared!! Thanks so much Felicity for helping us out!! Really friendly and a lot of fun too!! 5*****"
-        },
-        {
-            name: "Anita Dumitra",
-            rating: 5,
-            text: "We've recently got married and have practiced our wedding dance with Felicity. It's been a great experience every step of the way. We have enjoyed every class and even though we are fairly new into dancing. Felicity, with patience and great humour, has helped us and advised us so well that we have nailed it after a few hours practice. On the big day thanks to Felicity we felt confident enough to simply enjoy every moment of our dance. Ever grateful! 😊"
         },
         {
             name: "Sam A",
@@ -73,11 +63,20 @@ export default function ReviewsComponent() {
             <h2 className="text-3xl font-bold mb-6">Customer Reviews</h2>
             <div className="relative">
                 <div className="carousel-item w-full">
-                    <div className="p-4 bg-white rounded-lg shadow-lg mx-auto w-full max-w-[90%] md:max-w-3xl lg:max-w-4xl">
-                        <h3 className="text-xl font-bold mb-2">
+                    <div
+                        className="p-4 bg-white rounded-lg shadow-lg mx-auto w-full max-w-[100%] md:max-w-3xl lg:max-w-[85%]"
+                        style={{
+                            height: '420px', // Increased height for mobile
+                            maxHeight: '270px', // Set max height for desktop
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'center',
+                        }}
+                    >
+                        <h3 className="text-xl font-bold mb-2 text-left">
                             {reviews[currentIndex].name}
                         </h3>
-                        <div className="flex items-center mb-2">
+                        <div className="flex items-center mb-2 justify-start">
                             {Array.from({ length: reviews[currentIndex].rating }).map(
                                 (_, i) => (
                                     <svg
@@ -98,24 +97,24 @@ export default function ReviewsComponent() {
                                 )
                             )}
                         </div>
-                        <p className="text-base">{reviews[currentIndex].text}</p> {/* Fixed font size */}
+                        <p className="text-base text-left">{reviews[currentIndex].text}</p> {/* Fixed font size */}
                     </div>
                 </div>
 
                 {/* Thinner buttons, positioned outside the review box */}
                 {showButtons && (
-                    <div className="absolute top-0 bottom-0 left-0 right-0 flex justify-between items-center px-2 transition-opacity duration-300">
+                    <div className="absolute top-0 bottom-0 left-0 right-0 flex justify-between items-center px-4 transition-opacity duration-300">
                         <button
                             onClick={handlePrev}
-                            className="h-full w-3 sm:w-4 md:w-4 text-black flex items-center justify-center bg-transparent"
-                            style={{ zIndex: 30 }} // Ensures buttons are on top
+                            className="h-full w-3 sm:w-4 md:w-4 text-black flex items-center justify-center bg-transparent hover:bg-transparent"
+                            style={{ zIndex: 30, marginLeft: '-15px' }} // Adjusted margin for mobile
                         >
                             ❮
                         </button>
                         <button
                             onClick={handleNext}
-                            className="h-full w-3 sm:w-4 md:w-4 text-black flex items-center justify-center bg-transparent"
-                            style={{ zIndex: 30 }} // Ensures buttons are on top
+                            className="h-full w-3 sm:w-4 md:w-4 text-black flex items-center justify-center bg-transparent hover:bg-transparent"
+                            style={{ zIndex: 30, marginRight: '-15px' }} // Adjusted margin for mobile
                         >
                             ❯
                         </button>
