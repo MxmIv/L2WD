@@ -73,7 +73,7 @@ export default function ReviewsComponent() {
             <h2 className="text-3xl font-bold mb-6">Customer Reviews</h2>
             <div className="relative">
                 <div className="carousel-item w-full">
-                    <div className="p-4 bg-white rounded-lg shadow-lg mx-auto w-full md:max-w-3xl lg:max-w-4xl">
+                    <div className="p-4 bg-white rounded-lg shadow-lg mx-auto w-full max-w-[90%] md:max-w-3xl lg:max-w-4xl">
                         <h3 className="text-xl font-bold mb-2">
                             {reviews[currentIndex].name}
                         </h3>
@@ -98,23 +98,23 @@ export default function ReviewsComponent() {
                                 )
                             )}
                         </div>
-                        <p className="text-base sm:text-sm">{reviews[currentIndex].text}</p> {/* Adjust font size for small screens */}
+                        <p className="text-base">{reviews[currentIndex].text}</p> {/* Fixed font size */}
                     </div>
                 </div>
 
                 {/* Thinner buttons, positioned outside the review box */}
                 {showButtons && (
-                    <div className="absolute top-0 bottom-0 left-0 right-0 flex justify-between items-center px-4 transition-opacity duration-300">
+                    <div className="absolute top-0 bottom-0 left-0 right-0 flex justify-between items-center px-2 transition-opacity duration-300">
                         <button
                             onClick={handlePrev}
-                            className="h-full w-4 text-black flex items-center justify-center bg-transparent"
+                            className="h-full w-3 sm:w-4 md:w-4 text-black flex items-center justify-center bg-transparent"
                             style={{ zIndex: 30 }} // Ensures buttons are on top
                         >
                             ❮
                         </button>
                         <button
                             onClick={handleNext}
-                            className="h-full w-4 text-black flex items-center justify-center bg-transparent"
+                            className="h-full w-3 sm:w-4 md:w-4 text-black flex items-center justify-center bg-transparent"
                             style={{ zIndex: 30 }} // Ensures buttons are on top
                         >
                             ❯
