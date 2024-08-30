@@ -5,7 +5,7 @@ import CookieBanner from '../components/CookieBanner';
 
 export const metadata = {
     title: {
-        template: 'Learn 2 Wedding Dance' ,
+        template: 'Learn 2 Wedding Dance',
         default: 'Learn 2 Wedding Dance | Personalized First Dance & Hen Parties in Edinburgh',
     },
     description: 'Personalized wedding dance lessons and Hen parties in Edinburgh. Learn from an award-winning choreographer to make your first dance and celebrations unforgettable.',
@@ -34,13 +34,13 @@ export const metadata = {
     },
 };
 
-
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
         <head>
             <link rel="icon" href="/L2WD_logo.svg" sizes="any" />
             <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+            <link rel="canonical" href="https://learn2weddingdance.co.uk" />
             <title>{metadata.title.default}</title>
             {/* Google Analytics */}
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-HXE6NMYXM8"></script>
