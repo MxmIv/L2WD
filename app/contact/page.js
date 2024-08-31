@@ -1,5 +1,3 @@
-// app/contact/page.js
-
 import ContactUs from '../../components/ContactUs'; // Import the ContactUs component
 
 export default function ContactPage() {
@@ -28,7 +26,7 @@ export default function ContactPage() {
                         allowFullScreen=""
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
-                        className="rounded-lg shadow-lg"
+                        className="w-full h-64 sm:w-96 sm:h-72 md:w-[400px] md:h-[300px] rounded-lg shadow-lg"
                     ></iframe>
                 </div>
 
