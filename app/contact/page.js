@@ -4,6 +4,15 @@ import { FeedbackForm } from '../../components/feedback-form';
 export default function ContactPage() {
     return (
         <div className="container mx-auto px-4 py-20">
+            {/* Hidden HTML form for Netlify detection */}
+            <form name="feedback" data-netlify="true" netlify-honeypot="bot-field" hidden>
+                <input type="hidden" name="form-name" value="feedback" />
+                <input type="text" name="name" />
+                <input type="email" name="email" />
+                <input type="tel" name="phone" />
+                <textarea name="message"></textarea>
+            </form>
+
             {/* Inquiry Form */}
             <div className="mb-10">
                 <FeedbackForm />
