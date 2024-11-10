@@ -6,6 +6,7 @@ import { FaCheckCircle, FaExclamationTriangle } from 'react-icons/fa';
 export function FeedbackForm() {
     const [status, setStatus] = useState(null);
     const [error, setError] = useState(null);
+    const [fieldError, setFieldError] = useState({ email: false, phone: false });
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
@@ -17,11 +18,12 @@ export function FeedbackForm() {
         const phone = formData.get("phone");
 
         if (!email && !phone) {
+            setFieldError({ email: true, phone: true });
             setError("Please provide either an email or a phone number.");
             return;
         }
 
-        // Proceed with form submission
+        setFieldError({ email: false, phone: false });
         setStatus('pending');
 
         fetch("/", {
@@ -53,10 +55,12 @@ export function FeedbackForm() {
                 name="feedback"
                 method="POST"
                 data-netlify="true"
+                netlify-honeypot="bot-field"
                 onSubmit={handleFormSubmit}
                 className="flex flex-col gap-4"
             >
                 <input type="hidden" name="form-name" value="feedback" />
+                <input type="hidden" name="bot-field" />
 
                 <input
                     name="name"
@@ -70,15 +74,17 @@ export function FeedbackForm() {
                     name="email"
                     type="email"
                     placeholder="Email (required if no phone)"
-                    className="py-3 px-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-700"
+                    className={`py-3 px-4 rounded-md border ${fieldError.email ? 'border-red-500' : 'border-gray-300'} focus:outline-none focus:ring-2 ${fieldError.email ? 'focus:ring-red-500' : 'focus:ring-gray-700'}`}
                 />
+                {fieldError.email && <p className="text-red-500 text-sm">Please enter an email or phone number.</p>}
 
                 <input
                     name="phone"
                     type="tel"
                     placeholder="Phone (required if no email)"
-                    className="py-3 px-4 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-700"
+                    className={`py-3 px-4 rounded-md border ${fieldError.phone ? 'border-red-500' : 'border-gray-300'} focus:outline-none focus:ring-2 ${fieldError.phone ? 'focus:ring-red-500' : 'focus:ring-gray-700'}`}
                 />
+                {fieldError.phone && <p className="text-red-500 text-sm">Please enter a phone number or email.</p>}
 
                 <textarea
                     name="message"
