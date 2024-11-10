@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useState } from 'react';
 import { FaCheckCircle, FaExclamationTriangle } from 'react-icons/fa';
@@ -8,15 +8,15 @@ export function FeedbackForm() {
     const [error, setError] = useState(null);
     const [fieldError, setFieldError] = useState({ email: false, phone: false });
 
-    const handleFormSubmit = (event) => {
+    const handleSubmit = (event) => {
         event.preventDefault();
         setError(null);
 
-        // Client-side validation for email or phone
         const formData = new FormData(event.target);
         const email = formData.get("email");
         const phone = formData.get("phone");
 
+        // Client-side validation for email or phone
         if (!email && !phone) {
             setFieldError({ email: true, phone: true });
             setError("Please provide either an email or a phone number.");
@@ -29,15 +29,12 @@ export function FeedbackForm() {
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: new URLSearchParams(formData).toString(),
+            body: new URLSearchParams(formData).toString()
         })
-            .then((response) => {
-                if (response.ok) {
-                    setStatus('ok');
-                    event.target.reset(); // Reset form fields after submission
-                } else {
-                    throw new Error(`${response.status} ${response.statusText}`);
-                }
+            .then(() => {
+                setStatus('ok');
+                event.target.reset(); // Reset form fields after submission
+                console.log("Form successfully submitted");
             })
             .catch((e) => {
                 setStatus('error');
@@ -54,10 +51,9 @@ export function FeedbackForm() {
             <form
                 name="feedback"
                 method="POST"
-                action="/"
                 data-netlify="true"
                 netlify-honeypot="bot-field"
-                onSubmit={handleFormSubmit}
+                onSubmit={handleSubmit}
                 className="flex flex-col gap-4"
             >
                 <input type="hidden" name="form-name" value="feedback" />
