@@ -54,6 +54,7 @@ export function FeedbackForm() {
             <form
                 name="feedback"
                 method="POST"
+                action="/"
                 data-netlify="true"
                 netlify-honeypot="bot-field"
                 onSubmit={handleFormSubmit}
