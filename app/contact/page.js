@@ -8,10 +8,6 @@ import { FeedbackForm } from '../../components/feedback-form';
 export default function ContactPage() {
     return (
         <div className="container mx-auto px-4 py-20">
-            {/* Inquiry Form */}
-            <div className="mb-10">
-                <FeedbackForm />
-            </div>
 
             {/* Contact Us Component */}
             <ContactUs />
