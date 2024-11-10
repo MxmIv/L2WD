@@ -11,6 +11,7 @@ export function FeedbackForm() {
     const handleSubmit = (event) => {
         event.preventDefault();
         setError(null);
+        setStatus('pending');
 
         const formData = new FormData(event.target);
         const email = formData.get("email");
@@ -20,27 +21,37 @@ export function FeedbackForm() {
         if (!email && !phone) {
             setFieldError({ email: true, phone: true });
             setError("Please provide either an email or a phone number.");
+            setStatus(null); // reset status if validation fails
             return;
         }
 
         setFieldError({ email: false, phone: false });
-        setStatus('pending');
+
+        // Log the form data being sent
+        console.log("Submitting form data:", new URLSearchParams(formData).toString());
 
         fetch("/", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: new URLSearchParams(formData).toString()
         })
-            .then(() => {
-                setStatus('ok');
-                event.target.reset(); // Reset form fields after submission
-                console.log("Form successfully submitted");
+            .then((response) => {
+                // Check if the response is successful and contains expected properties
+                if (response.ok) {
+                    console.log("Form successfully submitted:", response);
+                    setStatus('ok');
+                    event.target.reset(); // Reset form fields after submission
+                } else {
+                    throw new Error(`Unexpected response: ${response.status} ${response.statusText}`);
+                }
             })
-            .catch((e) => {
+            .catch((error) => {
+                console.error("Error submitting form:", error);
                 setStatus('error');
-                setError(e.message || "An error occurred. Please try again.");
+                setError("An error occurred. Please try again.");
             });
     };
+
 
     return (
         <div className="bg-gray-100 p-6 rounded-lg shadow-md">
