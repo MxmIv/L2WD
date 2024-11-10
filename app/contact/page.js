@@ -1,9 +1,15 @@
-import ContactUs from '../../components/ContactUs'; // Import the ContactUs component
+import ContactUs from '../../components/ContactUs';
+import { FeedbackForm } from '../../components/feedback-form';
 
 export default function ContactPage() {
     return (
         <div className="container mx-auto px-4 py-20">
-            {/* Reusing the ContactUs component */}
+            {/* Inquiry Form */}
+            <div className="mb-10">
+                <FeedbackForm />
+            </div>
+
+            {/* Contact Us Component */}
             <ContactUs />
 
             {/* Additional Contact Information */}
@@ -22,7 +28,7 @@ export default function ContactPage() {
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2236.794862244891!2d-3.1636635228388528!3d55.90091687313938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887b9dbc580abbb%3A0x85ba06ef10b59e6c!2sLearn%202%20Wedding%20Dance!5e0!3m2!1sen!2suk!4v1724180027060!5m2!1sen!2suk"
                         width="400"
                         height="300"
-                        style={{ border: 0 }} // Corrected style prop
+                        style={{ border: 0 }}
                         allowFullScreen=""
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
