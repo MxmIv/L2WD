@@ -1,3 +1,7 @@
+// contact/page.js
+
+"use client";
+
 import ContactUs from '../../components/ContactUs';
 import { FeedbackForm } from '../../components/feedback-form';
 
