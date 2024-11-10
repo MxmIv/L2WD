@@ -49,10 +49,10 @@ export function FeedbackForm() {
                 Have any questions or want to book a session? Feel free to reach out to us!
             </p>
             <form
-                name="feedback"
+                name="feedback" // Form name
                 method="POST"
-                data-netlify="true"
-                netlify-honeypot="bot-field"
+                data-netlify="true" // Netlify form detection
+                netlify-honeypot="bot-field" // Honeypot field
                 onSubmit={handleSubmit}
                 className="flex flex-col gap-4"
             >
